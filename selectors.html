@@ -1,0 +1,62 @@
+<!-- 
+selectors
+class 
+id 
+combination selectors
+1.descendant selector (space)
+2.child selector (>)
+3.adjacent sibling selector (+)
+4.general sibling selector (~) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+/* div p
+{
+    background-color: chartreuse;
+}   */
+/* div > p
+{
+  background-color: aqua;
+} */
+/* div~p
+{
+  background-color: blue;
+} */
+div+p
+{
+  background-color: coral;
+}
+</style>
+</head>
+<body>
+  <div>
+    <p>this is inside div</p>
+    <p>this is inside div</p>
+     <div>
+        <section>
+          <p>this is pargraph</p>
+        </section>
+        <p>this next section</p>
+     </div> 
+  </div>
+
+  <p>this is out side the div</p>
+  <p>this is out side the div</p>
+  <section>
+    <p>this is inside the section</p>
+  </section>
+  
+  <div>
+    <section>
+    <p>this is pargraph</p>
+    </section>
+    <p>this next section</p>
+ </div> 
+  <p>this is outside the section</p>  
+</body>
+</html>
